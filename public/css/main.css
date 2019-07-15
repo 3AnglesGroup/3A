@@ -1,181 +1,184 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    color: #000307;
+}
 html, body, #app {
     height: 100%;
-    font-family: FiraSans;
 }
 
-.fondo {
-    position: fixed;
+a {
+    text-decoration: none!important;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    position: absolute;
     top: 0;
-    left: 0;
     right: 0;
-    bottom: 0;
-    background-image:url(../img/day.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.noche {
-    position: fixed;
-    top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-image:url(../img/night.jpg);
-    background-size: cover;
-    background-position: center;
-    display: none;
+    z-index: 1030;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.day-leaves{
-  position: fixed;
-  width: 37%;
+.navbar-light {
+    background: rgba(255, 255, 255, 0.5);
 }
-.night-leaves{
-  position: fixed;
-  width: 37%;
-  display: none;
+.navbar-light .navbar-nav .nav-link {
+    color: #7C7C7C;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #000;
 }
 
-.logo{
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer {
+    background-image: linear-gradient(180deg, #6748AB 10%, #0E3869 100%);
+    color: #fff;
     position: relative;
+}
+.footer >div {
+    background-image: url(../img/hoja-bg-footer.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+.footer .box {
+    width: 90%;
+    margin: -50px auto 0 auto;
+    background-image: linear-gradient(140deg, #FC5C80 20%, #FDD257 90%);
+    padding: 10%;
+    text-align: center;
+}
+.footer .social {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer .social a {
+    display: inline-block;
+    margin: 5px 15px;
+}
+.footer .social a:hover {
+    opacity: .8;
+}
+.footer .links a {
+    display: inline-block;
+    margin: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.footer .logo >img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.footer .logo a {
+    display: inline-block;
+    color: #fff;
+    font-size: .9rem;
+    margin: 5px 0;
+    white-space: nowrap;
+}
+.footer .logo a img,
+.footer .logo a span {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer .links a:hover, .footer .logo a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer img.hoja {
+    position: absolute;
+    bottom: 0;
     width: 50%;
-    margin: 5% 0 0 8%;
+    max-width: 550px;
 }
 
-.contact{
-    margin-top: 5%;
+.footer .copy {
+    width: 45%;
+    margin: 15px 5% 5% auto;
+    text-align: right;
+    font-size: .7rem;
+    font-weight: 300;
 }
-.contact p{
-    margin: 0px;
-    font-size:17px;
-     font-family: FiraSansExtraBook;
-     font-style: ExtraBold;
-     color: #969494;
-}
-.contact p span{
-    font-family: FiraSans;
-    font-style: book;
-}
-.estamos{
-
-   
-}
-.estamos p{
-    font-family: nimbus;
-    color: #F030A6;
-    font-size: 59px;
-    margin-bottom: -3rem;
-}
-.estamos span{
-    font-family: Guthen;
-    color: white;
-    font-size: 70px;
-    margin-left: 25%;
-
+.footer .copy img {
+    max-width: 100px;
+    vertical-align: bottom;
 }
 
-.form{
-    background: white;
-}
-.caja-form{
-    width: 60%;
-    margin-left: 7%;
-    padding: 5%;
-
-}
-.form h1{
-    font-family: nimbus;
-    color: #29CEDC;
-    font-size: 70px;
- 
-}
-
-.form input[type=text], .form input[type=email], .form input[type=tel], .form textarea {
-    display: block;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 8px;
-    margin-top: 6%;
+@media (min-width: 576px){
+    
+    
     
 }
 
-input::-webkit-input-placeholder {
-  text-decoration-line: none;
-  font-family: FiraSans;
-}
-textarea::-webkit-input-placeholder {
-  font-family: FiraSans;
-}
-input:focus{
-	outline:0px;
-}
-textarea:focus{
-	outline:0px;
-}
-.form img{
-    width: 5%;
-    margin-left: 3%;
-}
-.form a{
-    color: #969494;
-}
-button{
-    width: 63%;
-    margin-bottom: 5%;
-    color: #20CEA6;
-    background: #E3F5B6;
-    border: none;
-    cursor: pointer;
+@media (min-width: 768px){
+    
+    .navbar {
+        padding: .5rem 5rem;
+    }
+    
+    .footer .box {
+        text-align: left;
+        padding: 40px 10% 100px 10%;
+    }
+    .footer .logo >img {
+        margin-top: 0;
+    }
+    .footer .copy {
+        width: 90%;
+        margin: 15px auto 5% auto;
+        font-size: .8rem;
+    }
+    .footer img.hoja {
+        width: 40%;
+    }
+    
 }
 
-@media (max-width: 768px){
-    .contact{
-        width: 60%;
-        margin-left: 35%;
+@media (min-width: 992px){
+    
+    .footer .copy {
+        text-align: center;
     }
-    .contact p span{
-        font-size: 14px;
+    .footer img.hoja {
+        width: 30%;
     }
-    .logo{
-        width: 100%;
-        margin: 5% 0 0 3%;
-    }
-    .estamos p{
-        margin-bottom: -1rem;
-    }
-    .estamos span{
-        font-size: 57px;
-    }
-    .form h1{
-    font-size: 60px;
- 
 }
 
+@media (min-width: 1200px){
+    
+    .footer .box {
+        width: 80%;
+    }
+    .footer .copy {
+        width: 80%;
+        margin: 15px auto 8% auto;
+    }
 }
-
 
 @font-face {
-    font-family: 'FiraSans';
-    font-style: book;
-    font-weight: 300;
-    src: local('Montserrat Light'), url('../fonts/FiraSansCondensed-Book.woff') format('woff');
-}
-@font-face {
-    font-family: 'FiraSansExtraBook';
-    font-style: ExtraBold;
-    font-weight: 300;
-    src: local('Montserrat Light'), url('../fonts/FiraSansCondensed-ExtraBold.woff') format('woff');
-}
-@font-face {
-    font-family: 'nimbus';
+    font-family: 'Nimbus';
     font-style: normal;
-    font-weight: 300;
-    src: local('Montserrat Light'), url('../fonts/nimbus_sans_becker_pbla.woff') format('woff');
+    font-weight: 400;
+    src: local('Nimbus Sans Becker PBla'), url('../fonts/nimbus_sans_becker_pbla.woff') format('woff');
 }
 @font-face {
     font-family: 'Guthen';
     font-style: normal;
-    font-weight: 300;
-    src: local('Montserrat Light'), url('../fonts/Guthen-Bloots-Personal-Use.woff') format('woff');
+    font-weight: 400;
+    src: local('Guthen Bloots Personal Use'), url('../fonts/Guthen-Bloots-Personal-Use.woff') format('woff');
 }

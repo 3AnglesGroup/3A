@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>3 Angles Group</title>
      <link rel="stylesheet" href="css/app.css">
-     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
 <div class="fondo"></div>

@@ -1,0 +1,181 @@
+html, body, #app {
+    height: 100%;
+    font-family: FiraSans;
+}
+
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url(../img/day.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.noche {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url(../img/night.jpg);
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+.day-leaves{
+  position: fixed;
+  width: 37%;
+}
+.night-leaves{
+  position: fixed;
+  width: 37%;
+  display: none;
+}
+
+.logo{
+    position: relative;
+    width: 50%;
+    margin: 5% 0 0 8%;
+}
+
+.contact{
+    margin-top: 5%;
+}
+.contact p{
+    margin: 0px;
+    font-size:17px;
+     font-family: FiraSansExtraBook;
+     font-style: ExtraBold;
+     color: #969494;
+}
+.contact p span{
+    font-family: FiraSans;
+    font-style: book;
+}
+.estamos{
+
+   
+}
+.estamos p{
+    font-family: nimbus;
+    color: #F030A6;
+    font-size: 59px;
+    margin-bottom: -3rem;
+}
+.estamos span{
+    font-family: Guthen;
+    color: white;
+    font-size: 70px;
+    margin-left: 25%;
+
+}
+
+.form{
+    background: white;
+}
+.caja-form{
+    width: 60%;
+    margin-left: 7%;
+    padding: 5%;
+
+}
+.form h1{
+    font-family: nimbus;
+    color: #29CEDC;
+    font-size: 70px;
+ 
+}
+
+.form input[type=text], .form input[type=email], .form input[type=tel], .form textarea {
+    display: block;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 8px;
+    margin-top: 6%;
+    
+}
+
+input::-webkit-input-placeholder {
+  text-decoration-line: none;
+  font-family: FiraSans;
+}
+textarea::-webkit-input-placeholder {
+  font-family: FiraSans;
+}
+input:focus{
+	outline:0px;
+}
+textarea:focus{
+	outline:0px;
+}
+.form img{
+    width: 5%;
+    margin-left: 3%;
+}
+.form a{
+    color: #969494;
+}
+button{
+    width: 63%;
+    margin-bottom: 5%;
+    color: #20CEA6;
+    background: #E3F5B6;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .contact{
+        width: 60%;
+        margin-left: 35%;
+    }
+    .contact p span{
+        font-size: 14px;
+    }
+    .logo{
+        width: 100%;
+        margin: 5% 0 0 3%;
+    }
+    .estamos p{
+        margin-bottom: -1rem;
+    }
+    .estamos span{
+        font-size: 57px;
+    }
+    .form h1{
+    font-size: 60px;
+ 
+}
+
+}
+
+
+@font-face {
+    font-family: 'FiraSans';
+    font-style: book;
+    font-weight: 300;
+    src: local('Montserrat Light'), url('../fonts/FiraSansCondensed-Book.woff') format('woff');
+}
+@font-face {
+    font-family: 'FiraSansExtraBook';
+    font-style: ExtraBold;
+    font-weight: 300;
+    src: local('Montserrat Light'), url('../fonts/FiraSansCondensed-ExtraBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'nimbus';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Montserrat Light'), url('../fonts/nimbus_sans_becker_pbla.woff') format('woff');
+}
+@font-face {
+    font-family: 'Guthen';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Montserrat Light'), url('../fonts/Guthen-Bloots-Personal-Use.woff') format('woff');
+}
