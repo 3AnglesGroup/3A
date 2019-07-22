@@ -13,5 +13,7 @@
 
 Route::get('/', function () {return view('welcome');});
 Route::get('/index', function () {return view('index');});
+Route::get('/habilidades', function () {return view('habilidades');});
 Route::get('/proyecto', function () {return view('proyecto');});
 Route::get('/trabajo', function () {return view('trabajo');});
+Route::get('/contacto', function () {return view('contacto');});
